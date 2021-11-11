@@ -44,6 +44,7 @@ class ResultViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return answers[indexPath.row].isCorrect ? CorrectAnswerCell() : WrongAnswerCell()
+        let answer = answers[indexPath.row]
+        return answer.isCorrect ? CorrectAnswerCell() : WrongAnswerCell()
     }
 }
