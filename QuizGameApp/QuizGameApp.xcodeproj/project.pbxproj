@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60315493273CF1E500AC7BCB /* CorrectAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60315492273CF1E500AC7BCB /* CorrectAnswerCell.xib */; };
+		60315497273CF53600AC7BCB /* WrongAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60315496273CF53600AC7BCB /* WrongAnswerCell.xib */; };
 		607D336E273BA0BD00920FD1 /* QuestionViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607D336D273BA0BD00920FD1 /* QuestionViewControllerTest.swift */; };
 		607D3373273BA15E00920FD1 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607D3372273BA15E00920FD1 /* QuestionViewController.swift */; };
 		607D3378273BA24200920FD1 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607D3377273BA24200920FD1 /* QuestionViewController.xib */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60315492273CF1E500AC7BCB /* CorrectAnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CorrectAnswerCell.xib; sourceTree = "<group>"; };
+		60315496273CF53600AC7BCB /* WrongAnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WrongAnswerCell.xib; sourceTree = "<group>"; };
 		607D336D273BA0BD00920FD1 /* QuestionViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewControllerTest.swift; sourceTree = "<group>"; };
 		607D3372273BA15E00920FD1 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		607D3377273BA24200920FD1 /* QuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
@@ -95,7 +99,9 @@
 				607D3372273BA15E00920FD1 /* QuestionViewController.swift */,
 				607D3377273BA24200920FD1 /* QuestionViewController.xib */,
 				607D338A273C1EF400920FD1 /* ResultViewController.swift */,
+				60315492273CF1E500AC7BCB /* CorrectAnswerCell.xib */,
 				607D338E273C1F6D00920FD1 /* ResultViewController.xib */,
+				60315496273CF53600AC7BCB /* WrongAnswerCell.xib */,
 			);
 			path = QuizGameApp;
 			sourceTree = "<group>";
@@ -193,8 +199,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6095D733273ADDFD00063A5C /* LaunchScreen.storyboard in Resources */,
+				60315497273CF53600AC7BCB /* WrongAnswerCell.xib in Resources */,
 				6095D730273ADDFD00063A5C /* Assets.xcassets in Resources */,
 				607D3378273BA24200920FD1 /* QuestionViewController.xib in Resources */,
+				60315493273CF1E500AC7BCB /* CorrectAnswerCell.xib in Resources */,
 				607D338F273C1F6D00920FD1 /* ResultViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
