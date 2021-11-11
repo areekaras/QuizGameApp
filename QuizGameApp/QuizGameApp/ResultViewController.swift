@@ -7,14 +7,26 @@
 
 import UIKit
 
+struct PresentableAnswer {
+    var isCorrect: Bool
+}
+
+class CorrectAnswerCell: UITableViewCell {
+    
+}
+
+class WrongAnswerCell: UITableViewCell {
+    
+}
+
 class ResultViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
     private var summary = ""
-    private var answers = [String]()
+    private var answers = [PresentableAnswer]()
     
-    convenience init(summary: String, answers: [String]) {
+    convenience init(summary: String, answers: [PresentableAnswer]) {
         self.init()
         
         self.summary = summary
@@ -32,6 +44,6 @@ class ResultViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        return answers[indexPath.row].isCorrect ? CorrectAnswerCell() : WrongAnswerCell()
     }
 }
