@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ResultViewController: UIViewController, UITableViewDataSource {
+class ResultViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
@@ -25,6 +25,7 @@ class ResultViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         
         headerLabel.text = summary
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.register(CorrectAnswerCell.self)
         tableView.register(WrongAnswerCell.self)
     }
